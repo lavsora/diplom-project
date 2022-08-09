@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("test")})();
+(()=>{"use strict";(()=>{const e=document.querySelector(".header-modal"),t=document.querySelector(".overlay"),d=document.querySelector(".button"),l=document.querySelector(".header-modal__close");d.addEventListener("click",(()=>{e.classList.remove("header-modal"),t.style.display="block"})),l.addEventListener("click",(()=>{e.classList.add("header-modal"),t.style.display="none"}))})()})();
