@@ -1,4 +1,4 @@
-const sendForm = () => {
+const sendForm = ({ someElem = []}) => {
     const forms = document.querySelectorAll('.form-horizontal')
 
     const statusBlock = document.createElement('div');
@@ -82,6 +82,14 @@ const sendForm = () => {
         statusBlock.textContent = '';
         statusBlock.insertAdjacentElement('afterbegin', loader);
         form.append(statusBlock)
+
+        someElem.forEach(elem => {
+            const element = document.getElementById(elem.id)
+
+            if (0 < +element.value) {
+                formBody[elem.id] = element.value
+            }
+        })
 
         if (validate(formElements)) {
             sendData(formBody)
