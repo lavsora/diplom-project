@@ -39,7 +39,6 @@ const validation = () => {
     }
 
     inputNameForm.forEach(inputName => {
-        console.log(inputName)
         inputName.addEventListener('input', (e) => e.target.value = e.target.value.replace(/[^а-яa-z\s]/gi, ''));
     })
 
