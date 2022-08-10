@@ -15,7 +15,6 @@ calculator()
 sendForm({
     someElem: [
         {   
-            type: 'input',
             id: 'calc-total'
         }
     ]
