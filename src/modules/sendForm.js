@@ -1,8 +1,6 @@
 const sendForm = () => {
     const forms = document.querySelectorAll('form')
 
-    console.log(forms)
-
     const statusBlock = document.createElement('div');
     const errorText = 'Ошибка!';
     const successText = 'Спасибо! Наш менеджер с вами свяжется!';
