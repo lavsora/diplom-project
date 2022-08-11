@@ -1,5 +1,7 @@
 const sendForm = () => {
-    const forms = document.querySelectorAll('.form-horizontal')
+    const forms = document.querySelectorAll('form')
+
+    console.log(forms)
 
     const statusBlock = document.createElement('div');
     const errorText = 'Ошибка!';
