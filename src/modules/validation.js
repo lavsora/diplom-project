@@ -1,5 +1,5 @@
 const validation = () => {
-    const inputNameForm = document.querySelectorAll('input[placeholder="ваше имя"]')
+    const inputNameForm = document.querySelectorAll('input[name="fio"]')
 
     function maskPhone(selector, masked = '+7 (__) --') {
         const elems = document.querySelectorAll(selector);
@@ -42,7 +42,7 @@ const validation = () => {
         inputName.addEventListener('input', (e) => e.target.value = e.target.value.replace(/[^а-яa-z\s]/gi, ''));
     })
 
-    maskPhone('input[placeholder="ваш телефон"]', '+7 (___) ___-__-__');
+    maskPhone('input[name="phone"]', '+7 (___) ___-__-__');
 }
 
 export default validation
