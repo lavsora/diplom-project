@@ -1,4 +1,4 @@
-const sendForm = ({ someElem = []}) => {
+const sendForm = ({ someElem = [] }) => {
     const forms = document.querySelectorAll('.form-horizontal')
 
     const statusBlock = document.createElement('div');
@@ -15,13 +15,13 @@ const sendForm = ({ someElem = []}) => {
                             <div class='sk-rect sk-rect-3'></div>
                             <div class='sk-rect sk-rect-4'></div>
                             <div class='sk-rect sk-rect-5'></div>`
-        
+
         return loader;
     }
 
     const checkInput = (list) => {
         list.forEach(input => {
-            if(input.name === 'fio' && input.value === '') {
+            if (input.name === 'fio' && input.value === '') {
                 input.classList.add('error');
             } else if (input.name === 'phone' && input.value === '') {
                 input.classList.add('error');
@@ -35,7 +35,7 @@ const sendForm = ({ someElem = []}) => {
 
             input.addEventListener('input', (e) => {
                 e.preventDefault()
-    
+
                 if (e.target.name === 'fio' && /^[а-яёЁa-z\s]{2,}$/gi.test(e.target.value)) {
                     e.target.classList.remove('error');
                 } else if (e.target.name === 'phone' && /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,}$/g.test(e.target.value)) {
@@ -84,11 +84,16 @@ const sendForm = ({ someElem = []}) => {
         form.append(statusBlock)
 
         someElem.forEach(elem => {
-            const element = document.getElementById(elem.id)
+            try {
+                const element = document.getElementById(elem.id)
 
-            if (0 < +element.value) {
-                formBody[elem.id] = element.value
+                if (0 < +element.value) {
+                    formBody[elem.id] = element.value
+                }
+            } catch (error) {
+                console.log(error.message)
             }
+            
         })
 
         if (validate(formElements)) {
@@ -113,7 +118,7 @@ const sendForm = ({ someElem = []}) => {
     forms.forEach(form => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-    
+
             submitForm(form)
         })
     })
