@@ -4,6 +4,7 @@ import validation from './modules/validation'
 import sendForm from './modules/sendForm'
 import calculator from './modules/calculator'
 import modal from './modules/modal'
+import slider from './modules/slider'
 
 timer('13 august 2022')
 scroll()
@@ -37,4 +38,5 @@ modal({
     openButtonClass: '.img-responsive',
     closeButtonClass: '.img-modal__close'
 })
+slider()
 
