@@ -1,15 +1,12 @@
-import headerModal from './modules/headerModal'
 import timer from './modules/timer'
 import scroll from './modules/scroll'
-import servicesModal from './modules/servicesModal'
 import validation from './modules/validation'
 import sendForm from './modules/sendForm'
 import calculator from './modules/calculator'
+import modal from './modules/modal'
 
-headerModal()
 timer('13 august 2022')
 scroll()
-servicesModal()
 validation()
 calculator()
 sendForm({
@@ -19,3 +16,25 @@ sendForm({
         }
     ]
 })
+modal({
+    sectionId: '#header',
+    modalClass: '.header-modal',
+    overlayClass: '.overlay',
+    openButtonClass: '.open-modal-header',
+    closeButtonClass: '.header-modal__close'
+})
+modal({
+    sectionId: '#services',
+    modalClass: '.services-modal',
+    overlayClass: '.overlay',
+    openButtonClass: '.open-modal-services',
+    closeButtonClass: '.services-modal__close'
+})
+modal({
+    sectionId: '#documents',
+    modalClass: '.img-modal',
+    overlayClass: '.overlay',
+    openButtonClass: '.img-responsive',
+    closeButtonClass: '.img-modal__close'
+})
+
