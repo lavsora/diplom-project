@@ -90,9 +90,7 @@ const sendForm = ({ someElem = [] }) => {
                 if (0 < +element.value) {
                     formBody[elem.id] = element.value
                 }
-            } catch (error) {
-                console.log(error.message)
-            }
+            } catch (error) {}
             
         })
 
