@@ -109,10 +109,8 @@ const slider = () => {
     };
 
     lowWidth(benefitsItems, 'benefits__item--active');
-    lowWidth(serviceItems, 'services-item--active');
 
     listener(benefitsArrows, '.arrow-left', '.arrow-right', '.benefits__item', 'benefits__item--active', '.benefits-wrap', 2);
-    listener(servicesArrows, '.arrow-left', '.arrow-right', '.services-item', 'services-item--active', '.services-items', 1);
 };
 
 export default slider

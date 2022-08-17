@@ -2037,14 +2037,6 @@ input.error {
   width: 100%;
 }
 
-.services-item {
-  display: none;
-}
-
-.services-item--active {
-  display: block;
-}
-
 .countdown {
   position: relative;
 }

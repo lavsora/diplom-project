@@ -70,7 +70,7 @@ const review = () => {
                     </div>`
     }
 
-    fetch('comments.json')
+    fetch('./comments.json')
         .then(res => res.json())
         .then(data => {
             render(data.comments)

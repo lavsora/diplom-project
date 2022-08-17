@@ -6,9 +6,10 @@ import calculator from './modules/calculator'
 import modal from './modules/modal'
 import slider from './modules/slider'
 import review from './modules/review'
+import sliderServices from './modules/sliderServices'
 
 review()
-timer('15 august 2022')
+timer('20 august 2022')
 scroll()
 validation()
 calculator()
@@ -41,4 +42,5 @@ modal({
     closeButtonClass: '.img-modal__close'
 })
 slider()
+sliderServices()
 
