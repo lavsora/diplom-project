@@ -4,7 +4,7 @@ import validation from './modules/validation'
 import sendForm from './modules/sendForm'
 import calculator from './modules/calculator'
 import modal from './modules/modal'
-import slidersliderBenefits from './modules/sliderBenefits'
+import sliderBenefits from './modules/sliderBenefits'
 import review from './modules/review'
 import sliderServices from './modules/sliderServices'
 
@@ -41,6 +41,6 @@ modal({
     openButtonClass: '.img-responsive',
     closeButtonClass: '.img-modal__close'
 })
-slidersliderBenefits()
+sliderBenefits()
 sliderServices()
 

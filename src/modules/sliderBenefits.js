@@ -1,5 +1,5 @@
-const slider = () => {
-    document.addEventListener("DOMContentLoaded", () => {
+const sliderBenefits = () => {
+    document.addEventListener('DOMContentLoaded', () => {
         const arrowsBlock = document.querySelector('.benefits-arrows');
         const benefitsWrap = document.querySelector('.benefits-wrap');
 
@@ -66,4 +66,4 @@ const slider = () => {
     })
 }
 
-export default slider
+export default sliderBenefits
