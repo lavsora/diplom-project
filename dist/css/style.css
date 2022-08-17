@@ -1994,11 +1994,6 @@ input.error {
 .benefits__item {
   width: 100%;
   max-width: 33%;
-  display: none;
-}
-
-.benefits__item--active {
-  display: block;
 }
 
 .benefits-arrows {
